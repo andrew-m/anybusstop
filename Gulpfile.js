@@ -12,6 +12,8 @@ gulp.task('styles', function() {
 gulp.task('copySource', function() {
     gulp.src('./src/html/**/*')
     .pipe(gulp.dest('./out'));
+    gulp.src('./src/script/**/*')
+    .pipe(gulp.dest('./out/script'));
 });
 
 gulp.task('default', ['styles','copySource']);
