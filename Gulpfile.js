@@ -8,3 +8,10 @@ gulp.task('styles', function() {
         }))
         .pipe(gulp.dest('./out/css'));
 });
+
+gulp.task('copySource', function() {
+    gulp.src('./src/html/**/*')
+    .pipe(gulp.dest('./out'));
+});
+
+gulp.task('default', ['styles','copySource']);
