@@ -1,7 +1,36 @@
+$tflblue: #000099;
+$tflred: #CC3333;
+$tfldarkgrey: #333366;
+$tfldarkgrey2: #414B56;
+$white: #FFFFFF;
+$buttonblue: #164b79;
+
 body {
-    background-color: #ffee99;
+    background-color: $tflred;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
-div.content{
-    background-color: #ff00ff;
+h1 {
+    display:block;
+    width:100%;
+    color:$white;
+    text-align:center;
+}
+
+.content{
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-color: $white;
+    width:23em;
+    margin:auto;
+    border: 4px solid $tfldarkgrey2;
+    input, label {
+        display:block;
+        margin:auto;
+        margin-top:5px;
+    }
+    #go {
+        width:5em;
+        
+    }
 }
