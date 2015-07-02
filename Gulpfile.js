@@ -14,6 +14,8 @@ gulp.task('copySource', function() {
     .pipe(gulp.dest('./out'));
     gulp.src('./src/script/**/*')
     .pipe(gulp.dest('./out/script'));
+    gulp.src('./src/images/**/*')
+    .pipe(gulp.dest('./out/images'));
 });
 
 gulp.task('default', ['styles','copySource']);
