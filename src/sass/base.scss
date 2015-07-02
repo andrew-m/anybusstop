@@ -34,3 +34,12 @@ h1 {
         
     }
 }
+span {
+    display:block;
+    border: 2px solid $tfldarkgrey;
+    background-color: $tflblue;
+    text-align: center;
+    cursor: pointer;
+    color:$white;
+}
+
