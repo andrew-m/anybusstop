@@ -2,6 +2,7 @@ $tflblue: #000099;
 $tflred: #CC3333;
 $tfldarkgrey: #333366;
 $tfldarkgrey2: #414B56;
+$tflgreen: #006633;
 $white: #FFFFFF;
 $buttonblue: #164b79;
 
@@ -23,6 +24,7 @@ h1 {
     background-color: $white;
     width:23em;
     margin:auto;
+    margin-bottom:10px;
     border: 4px solid $tfldarkgrey2;
     input, label {
         display:block;
@@ -31,7 +33,6 @@ h1 {
     }
     #go {
         width:5em;
-        
     }
 }
 span {
@@ -41,5 +42,10 @@ span {
     text-align: center;
     cursor: pointer;
     color:$white;
+}
+.help-placeholder {
+    img {
+        width:90%;
+    }
 }
 
