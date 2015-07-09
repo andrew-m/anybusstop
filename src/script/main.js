@@ -9,8 +9,8 @@ $(function () {
     console.log('tried set submit');
     $('.help-button').click(function(event){
         console.log('in help click');
-        $('.help-placeholder' ).load( "/help.html #container" );
-        //event.preventDefault();
+        $('.help-placeholder' ).load( "help.html #container" );
+        event.preventDefault();
     });
     console.log('tried set help click');
 });
