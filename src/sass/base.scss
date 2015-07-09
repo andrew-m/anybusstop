@@ -3,12 +3,13 @@ $tflred: #CC3333;
 $tfldarkgrey: #333366;
 $tfldarkgrey2: #414B56;
 $tflgreen: #006633;
+$tfltramlinkgreen: #66CC00;
 $white: #FFFFFF;
 $buttonblue: #164b79;
-
+$fontstack: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 body {
     background-color: $tflred;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-family: $fontstack;
 }
 
 h1 {
@@ -26,22 +27,62 @@ h1 {
     margin:auto;
     margin-bottom:10px;
     border: 4px solid $tfldarkgrey2;
-    input, label {
+    .number-textbox, label {
         display:block;
         margin:auto;
         margin-top:5px;
-    }
-    #go {
-        width:5em;
+        padding-bottom: 0.7em;
     }
 }
-span {
-    display:block;
-    border: 2px solid $tfldarkgrey;
-    background-color: $tflblue;
-    text-align: center;
-    cursor: pointer;
-    color:$white;
+
+.buttons {
+    height:5em;
+    margin:auto;
+    width:100%;
+    padding-top: 1em;
+
+    .irritating-shim {
+        display:inline-block;
+        background-color: lime;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+    span {
+        background-color: fuchsia;
+        border: 2px solid $tfldarkgrey;
+        font-size: 12pt;
+        height:5em;
+        width:7em;
+        display:table-cell;
+        vertical-align: middle;
+        a {
+            color:$white;
+            display: block;
+            text-decoration: none;
+        }
+    }
+    .submit-button {
+        background-color: $tflgreen;
+    }
+    .help-button {
+        background-color: $tflblue;
+    }
+
+//     text-align:center;
+//     .help-button , #go {
+//         display:table-cell;
+//         cursor: pointer;
+//         width:7em;
+//         height:5em;
+//         vertical-align:middle;
+//         text-decoration:none;
+//         margin:auto;
+//         a {
+//             display:inline-block;
+//             text-decoration:none;
+//             color:$white;
+//         }
+//     }
 }
 .help-placeholder {
     img {
