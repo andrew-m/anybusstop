@@ -20,6 +20,9 @@ h1 {
 }
 
 .content{
+    @media only screen and (max-device-width: 400px) {
+        width:90%;
+    }
     text-align: center;
     padding:10px 10px 10px 10px;
     background-color: $white;
